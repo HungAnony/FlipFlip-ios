@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FlipFlip" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_background" translatesAutoresizingMaskIntoConstraints="NO" id="S2p-pY-OI0">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_logo" translatesAutoresizingMaskIntoConstraints="NO" id="qza-eQ-Rt5">
+                                <rect key="frame" x="104.66666666666667" y="109" width="204.66666666666663" height="102.33333333333331"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="qza-eQ-Rt5" secondAttribute="height" multiplier="2:1" id="64v-AU-esR"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AfD-lH-85C" userLabel="btn_start">
+                                <rect key="frame" x="84.333333333333329" y="625" width="245.33333333333337" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="AfD-lH-85C" secondAttribute="height" multiplier="245:51" id="3ky-fz-imM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="Start" backgroundImage="ic_button">
+                                    <color key="titleColor" red="0.99607843137254903" green="0.38823529411764707" blue="0.396078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mAo-ml-PCQ"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_bold_circle" translatesAutoresizingMaskIntoConstraints="NO" id="ugb-V4-Pgn">
+                                <rect key="frame" x="63.333333333333343" y="287.66666666666674" width="287.33333333333326" height="287.33333333333326"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ugb-V4-Pgn" secondAttribute="height" multiplier="1:1" id="M83-Rs-gSa"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="90:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ziw-Q9-zFG" userLabel="lbl_timer">
+                                <rect key="frame" x="63.333333333333343" y="287.66666666666674" width="287.33333333333326" height="287.33333333333326"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="42"/>
+                                <color key="textColor" systemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YAk-mF-ajE" userLabel="Circle Timer View" customClass="CircleView" customModule="FlipFlip" customModuleProvider="target">
+                                <rect key="frame" x="63.333333333333343" y="287.66666666666674" width="287.33333333333326" height="287.33333333333326"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1QA-9D-ujp" userLabel="btn_start">
+                                <rect key="frame" x="84.333333333333329" y="726" width="245.33333333333337" height="51.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="End of study" backgroundImage="ic_button">
+                                    <color key="titleColor" red="0.99607843139999996" green="0.38823529410000002" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="endStudyButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xQs-bV-P7g"/>
+                                    <action selector="startButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ba7-KC-pDJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YAk-mF-ajE" firstAttribute="top" secondItem="ugb-V4-Pgn" secondAttribute="top" id="1nj-se-YpP"/>
+                            <constraint firstItem="YAk-mF-ajE" firstAttribute="trailing" secondItem="ugb-V4-Pgn" secondAttribute="trailing" id="2Qx-cv-et1"/>
+                            <constraint firstItem="1QA-9D-ujp" firstAttribute="height" secondItem="AfD-lH-85C" secondAttribute="height" id="4Qj-rs-lq5"/>
+                            <constraint firstItem="qza-eQ-Rt5" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="8hi-vf-zk8"/>
+                            <constraint firstItem="S2p-pY-OI0" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="8pR-dv-POd"/>
+                            <constraint firstItem="AfD-lH-85C" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Fhd-dv-6UI"/>
+                            <constraint firstItem="ziw-Q9-zFG" firstAttribute="bottom" secondItem="ugb-V4-Pgn" secondAttribute="bottom" id="HCN-qx-RSg"/>
+                            <constraint firstItem="ugb-V4-Pgn" firstAttribute="top" secondItem="qza-eQ-Rt5" secondAttribute="bottom" constant="76.333333333333371" id="I44-6I-Dy9"/>
+                            <constraint firstItem="qza-eQ-Rt5" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="1:8" id="KRD-Ot-GcI"/>
+                            <constraint firstItem="qza-eQ-Rt5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="65" id="Of3-dq-jda"/>
+                            <constraint firstItem="1QA-9D-ujp" firstAttribute="top" secondItem="AfD-lH-85C" secondAttribute="bottom" constant="50" id="T5P-0P-hpg"/>
+                            <constraint firstAttribute="top" secondItem="S2p-pY-OI0" secondAttribute="top" id="ZDU-Oc-AlU"/>
+                            <constraint firstItem="AfD-lH-85C" firstAttribute="top" secondItem="ugb-V4-Pgn" secondAttribute="bottom" constant="50" id="aO1-cS-Zga"/>
+                            <constraint firstItem="1QA-9D-ujp" firstAttribute="width" secondItem="AfD-lH-85C" secondAttribute="width" id="ah5-lc-6Hm"/>
+                            <constraint firstItem="ziw-Q9-zFG" firstAttribute="leading" secondItem="ugb-V4-Pgn" secondAttribute="leading" id="atm-QN-swO"/>
+                            <constraint firstItem="ugb-V4-Pgn" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="bhT-hL-a3d"/>
+                            <constraint firstItem="YAk-mF-ajE" firstAttribute="bottom" secondItem="ugb-V4-Pgn" secondAttribute="bottom" id="ejI-Ou-Ui8"/>
+                            <constraint firstItem="S2p-pY-OI0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="erM-Dc-T3k"/>
+                            <constraint firstItem="ziw-Q9-zFG" firstAttribute="top" secondItem="ugb-V4-Pgn" secondAttribute="top" id="hHF-nH-QKR"/>
+                            <constraint firstItem="YAk-mF-ajE" firstAttribute="leading" secondItem="ugb-V4-Pgn" secondAttribute="leading" id="hYG-BR-asa"/>
+                            <constraint firstAttribute="trailing" secondItem="S2p-pY-OI0" secondAttribute="trailing" id="kjI-aw-gqi"/>
+                            <constraint firstItem="1QA-9D-ujp" firstAttribute="centerX" secondItem="AfD-lH-85C" secondAttribute="centerX" id="mMH-KM-9cW"/>
+                            <constraint firstItem="AfD-lH-85C" firstAttribute="height" secondItem="qza-eQ-Rt5" secondAttribute="height" multiplier="0.5" id="olO-iY-hH3"/>
+                            <constraint firstItem="ugb-V4-Pgn" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="13:37" id="p9J-V8-Lu8"/>
+                            <constraint firstItem="ziw-Q9-zFG" firstAttribute="trailing" secondItem="ugb-V4-Pgn" secondAttribute="trailing" id="wMN-kj-ki4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="circleTimerView" destination="YAk-mF-ajE" id="yoU-zJ-yM0"/>
+                        <outlet property="endStudyBtn" destination="1QA-9D-ujp" id="8jK-pQ-kIM"/>
+                        <outlet property="timerLabel" destination="ziw-Q9-zFG" id="bcf-ny-TIU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="85.714285714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_background" width="414.33334350585938" height="896.33331298828125"/>
+        <image name="ic_bold_circle" width="295.33334350585938" height="295.33334350585938"/>
+        <image name="ic_button" width="245" height="54"/>
+        <image name="ic_logo" width="182" height="89"/>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
