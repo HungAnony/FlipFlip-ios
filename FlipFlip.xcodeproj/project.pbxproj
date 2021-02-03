@@ -10,7 +10,6 @@
 		B21036AA25A1FBF600B41D7B /* AlarmPhoneUp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B21036A925A1FBF600B41D7B /* AlarmPhoneUp.mp3 */; };
 		B21DC4AF2411F55100E8AA83 /* MyTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21DC4AE2411F55100E8AA83 /* MyTimer.swift */; };
 		B21DC4B12411F89900E8AA83 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21DC4B02411F89900E8AA83 /* CircleView.swift */; };
-		B25247D92474DC3E003F58E9 /* MyTimer2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25247D82474DC3E003F58E9 /* MyTimer2.swift */; };
 		B2E5BFFA240CB3B60040550D /* alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B2E5BFF9240CB3B60040550D /* alarm.mp3 */; };
 		BDE6F21023E756B200F7D271 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE6F20F23E756B200F7D271 /* AppDelegate.swift */; };
 		BDE6F21223E756B200F7D271 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE6F21123E756B200F7D271 /* SceneDelegate.swift */; };
@@ -34,7 +33,6 @@
 		B21036A925A1FBF600B41D7B /* AlarmPhoneUp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AlarmPhoneUp.mp3; sourceTree = "<group>"; };
 		B21DC4AE2411F55100E8AA83 /* MyTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTimer.swift; sourceTree = "<group>"; };
 		B21DC4B02411F89900E8AA83 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
-		B25247D82474DC3E003F58E9 /* MyTimer2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTimer2.swift; sourceTree = "<group>"; };
 		B2E5BFF9240CB3B60040550D /* alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm.mp3; sourceTree = "<group>"; };
 		BDE6F20C23E756B200F7D271 /* FlipFlip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlipFlip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDE6F20F23E756B200F7D271 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -104,7 +102,6 @@
 				BDE6F21D23E756B800F7D271 /* Info.plist */,
 				B21DC4AE2411F55100E8AA83 /* MyTimer.swift */,
 				B21DC4B02411F89900E8AA83 /* CircleView.swift */,
-				B25247D82474DC3E003F58E9 /* MyTimer2.swift */,
 			);
 			path = FlipFlip;
 			sourceTree = "<group>";
@@ -212,7 +209,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B25247D92474DC3E003F58E9 /* MyTimer2.swift in Sources */,
 				BDE6F21423E756B200F7D271 /* ViewController.swift in Sources */,
 				B21DC4B12411F89900E8AA83 /* CircleView.swift in Sources */,
 				BDE6F21023E756B200F7D271 /* AppDelegate.swift in Sources */,
