@@ -3,6 +3,14 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "ViewController.isUserCanUsePhone():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "accelerationData">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "ViewController.prepareToCountDown():ViewController.swift">
          <PersistentStrings>
             <PersistentString

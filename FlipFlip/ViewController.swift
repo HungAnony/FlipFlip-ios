@@ -147,7 +147,20 @@ class ViewController: UIViewController {
     }
     
     func isUserCanUsePhone() -> Bool{
+        if isTestingOnSimulator(accelerationData) {
+            return false
+        }
+        
         if accelerationData! < 0.8 {
+            return true
+        }
+        else{
+            return false
+        }
+    }
+    
+    func isTestingOnSimulator(_ accelerationData : Double?) -> Bool{
+        if accelerationData == nil {
             return true
         }
         else{

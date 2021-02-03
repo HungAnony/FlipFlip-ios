@@ -33,8 +33,9 @@
 		B21036A925A1FBF600B41D7B /* AlarmPhoneUp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AlarmPhoneUp.mp3; sourceTree = "<group>"; };
 		B21DC4AE2411F55100E8AA83 /* MyTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTimer.swift; sourceTree = "<group>"; };
 		B21DC4B02411F89900E8AA83 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		B23DB3E325CAFE79004B26FE /* FlipFlip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = FlipFlip.app; path = "/Users/hung/Projects/xcode/swift/FlipFlip/build/Debug-iphoneos/FlipFlip.app"; sourceTree = "<absolute>"; };
+		B23DB3E425CAFE79004B26FE /* FlipFlipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = FlipFlipTests.xctest; path = "/Users/hung/Projects/xcode/swift/FlipFlip/build/Debug-iphoneos/FlipFlipTests.xctest"; sourceTree = "<absolute>"; };
 		B2E5BFF9240CB3B60040550D /* alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm.mp3; sourceTree = "<group>"; };
-		BDE6F20C23E756B200F7D271 /* FlipFlip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlipFlip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDE6F20F23E756B200F7D271 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDE6F21123E756B200F7D271 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BDE6F21323E756B200F7D271 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,7 +43,6 @@
 		BDE6F21823E756B800F7D271 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDE6F21B23E756B800F7D271 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BDE6F21D23E756B800F7D271 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BDE6F22223E756B800F7D271 /* FlipFlipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlipFlipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,17 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				BDE6F20E23E756B200F7D271 /* FlipFlip */,
-				BDE6F20D23E756B200F7D271 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		BDE6F20D23E756B200F7D271 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				BDE6F20C23E756B200F7D271 /* FlipFlip.app */,
-				BDE6F22223E756B800F7D271 /* FlipFlipTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		BDE6F20E23E756B200F7D271 /* FlipFlip */ = {
@@ -123,7 +113,7 @@
 			);
 			name = FlipFlip;
 			productName = FlipFlip;
-			productReference = BDE6F20C23E756B200F7D271 /* FlipFlip.app */;
+			productReference = B23DB3E325CAFE79004B26FE /* FlipFlip.app */;
 			productType = "com.apple.product-type.application";
 		};
 		BDE6F22123E756B800F7D271 /* FlipFlipTests */ = {
@@ -141,7 +131,7 @@
 			);
 			name = FlipFlipTests;
 			productName = FlipFlipTests;
-			productReference = BDE6F22223E756B800F7D271 /* FlipFlipTests.xctest */;
+			productReference = B23DB3E425CAFE79004B26FE /* FlipFlipTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -172,7 +162,7 @@
 				Base,
 			);
 			mainGroup = BDE6F20323E756B200F7D271;
-			productRefGroup = BDE6F20D23E756B200F7D271 /* Products */;
+			productRefGroup = BDE6F20323E756B200F7D271;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
